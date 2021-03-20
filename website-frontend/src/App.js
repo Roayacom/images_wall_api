@@ -66,7 +66,7 @@ class App extends React.Component{
     this.loadPhotos();
   }
   loadPhotos(){
-    axios.get('http://localhost:3000/photo')
+    axios.get('http://34.247.136.51:3000/photo')
     .then(({data})=>{
       this.setState({photos:data})
     })
